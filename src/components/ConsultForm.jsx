@@ -84,8 +84,12 @@ export default function ConsultForm() {
     return (
       <div id="apply" className="consult-card consult-done">
         <span className="done-icon">✓</span>
-        <h2>상담 신청이 접수되었습니다</h2>
-        <p>담당 변호사가 내용을 검토한 후 영업일 기준 24시간 내에 입력하신 연락처로 연락드리겠습니다.</p>
+        <h2>신청이 완료되었습니다</h2>
+        <p>
+          신속하게 바로 전화드리겠습니다.
+          <br />
+          명함을 보내드리고 전화드릴 예정이니 문자 확인해 주세요.
+        </p>
         <button type="button" className="btn btn-outline" onClick={() => setDone(false)}>
           새 신청서 작성
         </button>
