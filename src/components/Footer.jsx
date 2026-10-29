@@ -16,7 +16,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="container">
-        <p className="copyright">© {YEAR} YN Law Office. All rights reserved.</p>
+        <p className="copyright">
+          © {YEAR} YN Law Office. All rights reserved.
+          <a className="admin-link" href="#admin">
+            관리자
+          </a>
+        </p>
       </div>
     </footer>
   )

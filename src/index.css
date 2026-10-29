@@ -836,3 +836,222 @@ ol {
     text-align: left;
   }
 }
+
+/* ===== 관리자: 상담 신청 방명록 ===== */
+.admin-link {
+  margin-left: 12px;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+}
+
+.admin-link:hover {
+  color: var(--gold-500);
+}
+
+.admin {
+  min-height: calc(100vh - 160px);
+  padding: 48px 0 80px;
+  background: var(--gray-50);
+}
+
+.admin-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--navy-700);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.admin-back:hover {
+  color: var(--gold-600);
+}
+
+.admin-login {
+  max-width: 420px;
+  margin: 40px auto 0;
+  box-shadow: 0 12px 36px rgba(13, 26, 54, 0.12);
+}
+
+.admin-board {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--gold-500);
+}
+
+.admin-top h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--navy-800);
+}
+
+.admin-top p {
+  color: var(--gray-500);
+  font-size: 0.85rem;
+}
+
+.admin-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.admin-filters button {
+  padding: 6px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 999px;
+  background: var(--white);
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.admin-filters button.active {
+  border-color: var(--navy-800);
+  background: var(--navy-800);
+  color: var(--white);
+}
+
+.admin-empty {
+  padding: 48px 0;
+  text-align: center;
+  color: var(--gray-500);
+}
+
+.entry-list {
+  display: grid;
+  gap: 16px;
+}
+
+.entry-card {
+  padding: 24px;
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid var(--gold-500);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(13, 26, 54, 0.05);
+}
+
+.entry-card.entry-1 {
+  border-left-color: var(--navy-700);
+}
+
+.entry-card.entry-2 {
+  border-left-color: var(--gray-200);
+  opacity: 0.75;
+}
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.entry-no {
+  color: var(--gold-600);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.entry-head h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--navy-800);
+}
+
+.entry-status {
+  padding: 6px 10px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  background: var(--gray-50);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy-800);
+}
+
+.entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.entry-tags span {
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: var(--navy-100);
+  color: var(--navy-800);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.entry-tags span:last-child {
+  background: var(--gold-100);
+  color: var(--gold-600);
+}
+
+.entry-content {
+  padding: 14px 16px;
+  border-radius: 6px;
+  background: var(--gray-50);
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+}
+
+.entry-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 14px;
+  font-size: 0.85rem;
+}
+
+.entry-contact,
+.entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.entry-contact a {
+  color: var(--navy-700);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.entry-contact a:hover {
+  color: var(--gold-600);
+}
+
+.entry-file {
+  color: var(--navy-700);
+  text-decoration: underline;
+}
+
+.entry-meta time {
+  color: var(--gray-500);
+}
+
+@media (max-width: 768px) {
+  .admin-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .entry-foot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
